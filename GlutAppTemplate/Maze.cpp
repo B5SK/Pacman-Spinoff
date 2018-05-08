@@ -268,43 +268,33 @@ void App::draw() {
     glEnd();
     glEnd();
     
-    glColor3d(1.0, 1.0, 1.0);
-    
-    //Draw some points
+     glBegin(GL_POLYGON);
     glBegin(GL_POINTS);
     
-    glVertex2f(0, 0);
-    glVertex2f(0, 0.075);
-    glVertex2f(0, 0.15);
-    glVertex2f(0.1, 0.15);
-    glVertex2f(0.1, 0.25);
+    glColor3f(0.0, 0.0, 1.0);
+    
+    glVertex2f(0.45, 0.15);
+    glVertex2f(0.45, -0.15);
+    glVertex2f(0.35, -0.15);
+    glVertex2f(0.35, 0.15);
     
     glEnd();
+    glEnd();
     
-    // Draw some points
-    //glBegin(GL_POINTS);
-    //glBegin(GL_POLYGON);
+    glBegin(GL_POLYGON);
+    glBegin(GL_POINTS);
     
-    //glVertex2f(0.5, 0.5);
-    //glVertex2f(0.5, -0.5);
-    //glVertex2f(-0.5, -0.5);
-    //glVertex2f(-0.5, 0.5);
+    glColor3f(0.0, 0.0, 1.0);
     
-    //glEnd();
-    //glEnd();
+    glVertex2f(-0.45, 0.15);
+    glVertex2f(-0.45, -0.15);
+    glVertex2f(-0.35, -0.15);
+    glVertex2f(-0.35, 0.15);
     
-    // Draw a yellow cross
-    //glColor3d(1.0, 1.0, 0.0);
+    glEnd();
+    glEnd();
     
-    //glBegin(GL_LINES);
-    
-    //glVertex2f(mx - 0.05f, my);
-    //glVertex2f(mx + 0.05f, my);
-    
-    //glVertex2f(mx, my - 0.05f);
-    //glVertex2f(mx, my + 0.05f);
-    
-    //glEnd();
+    glColor3d(1.0, 1.0, 1.0);
     
     // We have been drawing everything to the back buffer
     // Swap the buffers to see the result of what we drew
