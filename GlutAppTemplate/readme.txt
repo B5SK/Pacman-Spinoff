@@ -1,3 +1,9 @@
+make in makefile and open in Visual Studio
+
+Run the debugger and the project will open
+
+***
+
 FREEGLUTAPP
 -----------
 
